@@ -159,11 +159,13 @@ x <- seq(-4, 4, length = 100)
 y <- dnorm(x)
 
 
-#plot x and y as a scatterplot with connected lines(type="1") and add
+#plot x and y as a scatter plot with connected lines(type="l") and add
 #an x-axis with custom labels
+plot(x, y, type = "l", lwd = 2, axes = FALSE, xlab = "", ylab = "")
+axis(1, at = -3:3, labels = c("-3s","-2s","-1s","mean","1s","2s","3s"))
 
-plot(x, y, type = 1, lwd = 2, axes = FALSE, xlab = "", ylab = "")
-axis(1, at = -3:3, labels)
+
+#Confidence intervals
 
 
 
