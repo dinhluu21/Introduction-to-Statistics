@@ -166,8 +166,20 @@ axis(1, at = -3:3, labels = c("-3s","-2s","-1s","mean","1s","2s","3s"))
 
 
 #Confidence intervals
+lowerCI <- 2.62-(2*1.22)
+upperCI <- 2.62+(2*1.22)
+
+lowerCI
+upperCI
 
 
+#It's false to state that the we're 95% confident that the true mean lies within
+#our intervals. Technically it means if we run the experiment again and again
+#we will capture the true mean in 95% of those experiments.
+
+##The maize plants that have been cross pollinated were taller on average 
+##than the self-pollinated plants, with a mean difference in height of 
+##2.62 [0.18, 5.06] inches (mean [95% CI]).
 
 
 
